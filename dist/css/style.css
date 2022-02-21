@@ -1,0 +1,265 @@
+/* 
+font-family: 'Advent Pro', sans-serif;
+font-family: 'Changa One', cursive;
+font-family: 'Poppins', sans-serif; 
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* main box */
+
+.main_box {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/3953564.jpg);
+    background-size: cover;
+    background-position-y: -100px;
+    box-shadow: inset 0 0 0 1000px rgba(21, 35, 70, 0.8);
+}
+
+/* logo and nav menu */
+
+.top_line {
+    width: 100%;
+    height: 15%;
+    /* border-bottom: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo */
+
+.logo_link {
+    position: relative;
+}
+
+.logo_link .medilab {
+    color: white;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+    position: absolute;
+    top: -25px;
+    left: 100px;
+}
+
+.logo_link .plus {
+    color: #ff0000;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 40px;
+    position: absolute;
+    top: -38px;
+    left: 210px;
+}
+/* logo end */
+
+/* nav menu */
+
+.nav ul {
+    display: flex;
+    margin-right: 90px;
+}
+
+.nav ul li {
+    list-style: none;
+}
+
+.nav ul li a{
+    padding: 15px 10px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+}
+
+.nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+/* logo and nav menu end */
+
+/* intro */
+
+.intro {
+    width: 100%;
+    height: 85%;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* logo */
+.intro .logo {
+    margin-top: 100px;
+    width: 300px;
+    height: 100px;
+    position: relative;
+}
+
+.intro .logo .medilab {
+    color: white;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 60px;
+    font-weight: lighter;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.intro .logo .plus {
+    color: #ff0000;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 60px;
+    position: absolute;
+    top: -5%;
+    left: 77%;
+} 
+
+/* heading */
+.intro .heading {
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif; 
+    margin-top: 25px;
+}
+
+/* text */
+.intro .text {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Poppins', sans-serif; 
+    width: 40%;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* button */
+.button {
+    background-color: #0db0af;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.button:hover {
+    background-color: #097878;
+}
+
+/* arrow */
+.arrow {
+    color: white;
+    font-size: 25px;
+    font-weight: lighter;
+    margin-top: 140px;
+}
+
+/* intro end */
+
+/* content box */
+
+.content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center
+}
+
+.content_box {
+    width: 80%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left,
+.mid,
+.right {
+    /* border: 1px solid black; */
+    width: 32%;
+    height: 80%;
+}
+
+.left .heading {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 500;
+}
+
+.left .line {
+    margin-top: 7px;
+    margin-bottom: 20px;
+    width: 15%;
+    height: 3px;
+    background-color: orange;
+}
+
+.left .text {
+    color: rgba(0, 0, 0, 0.6);
+    font-family: 'Poppins', sans-serif; 
+    font-size: 14px;
+}
+
+.mid .top,
+.mid .bottom,
+.right .top,
+.right .bottom {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 50%;
+}
+
+.mid .top i,
+.mid .bottom i,
+.right .top i,
+.right .bottom i {
+    margin-bottom: 40px;
+    color: #0db0af;
+    font-size: 50px;
+}
+
+.mid .top .header,
+.mid .bottom .header,
+.right .top .header,
+.right .bottom .header {
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+}
+
+.mid .top .text,
+.mid .bottom .text,
+.right .top .text,
+.right .bottom .text {
+    color: rgba(0, 0, 0, 0.6);
+    font-family: 'Poppins', sans-serif; 
+    font-size: 13px;
+}
